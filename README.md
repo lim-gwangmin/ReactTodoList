@@ -16,4 +16,5 @@ MVC TodoList  for React
 * 전체 삭제 
 ### 업데이트
 2022.10.06
-* all, active, completed 리스트 필터 작업중
+ 1. all, active, completed 리스트 필터 작업중
+ 2. 리스트 필터 버튼 제거 , 대체 문구 추가 
