@@ -12,6 +12,9 @@ function Footer({ checkedTodoLength, todoCount, allClear }) {
          </span>
          <ul className="filters">
             <li>
+               필터 기능 추가 예정 
+            </li>
+            {/* <li>
                <a href="#/all">All</a>
             </li>
             <li>
@@ -19,7 +22,7 @@ function Footer({ checkedTodoLength, todoCount, allClear }) {
             </li>
             <li>
                <a href="#/completed">Completed</a>
-            </li>
+            </li> */}
          </ul>
          <ClearCompletedBtn checkedTodoLength={checkedTodoLength} allClear={allClear}/>
       </footer>

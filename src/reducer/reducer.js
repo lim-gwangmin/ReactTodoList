@@ -1,6 +1,5 @@
 import { ACTION_TYPE } from "./action";
 
-
 export function reducer(state, action) {
   switch (action.type) {
       case ACTION_TYPE.ALL:

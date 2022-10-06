@@ -1,5 +1,4 @@
-import React, { useReducer } from 'react';
-import { reducer } from './reducer/reducer';
+import React from 'react';
 import TodoApp from './component/TodoApp';
 import useTodoController from './hook/useTodoController';
 
@@ -15,10 +14,6 @@ function App() {
       editTodo,
    } = useTodoController([]);
 
-   const [ state, dispatch ] = useReducer(reducer, todoList);
-
-
-   console.log(state,'state')
    return (
       <TodoApp>
          <TodoApp.Header createTodo={createTodo}/>
