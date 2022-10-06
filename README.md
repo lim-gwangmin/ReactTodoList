@@ -8,6 +8,6 @@ MVC TodoList  for React
 * 선택 리스트 삭제
 * 선택 리스트 내용 수정
 * 전체 삭제 
-### 수정
+### 업데이트
 2022.10.06
 * all, active, completed 리스트 필터 작업중
