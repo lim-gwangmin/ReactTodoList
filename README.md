@@ -1,6 +1,12 @@
 # ReactTodoList
 MVC TodoList  for React
+### 내용
+기존 MVC TodoList 리팩토리
 
+* Custom Hook
+* Styled Component
+* React Component Patters
+* 상수 이용 및 관리
 ### 기능
 * 리스트 추가
 * 리스트 전체 선택
