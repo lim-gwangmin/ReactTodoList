@@ -12,9 +12,11 @@ function TodoListProvider({ children, value }) {
 
 function useCounterContext() {
   const context = React.useContext(TodoListContext);
+  
   if (context === undefined) {
     throw new Error("useCounterContext must be used within a TodoListProvider");
   }
+  
   return context;
 }
 

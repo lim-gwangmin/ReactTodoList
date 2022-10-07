@@ -2,8 +2,7 @@ import { useEffect } from 'react';
 import { EVENT_TYPE } from '../constants/constants';
 
 function useOnClickOutside(ref, handler) {
-   // console.log(handler,'handler')
-   // console.log(ref,'ref')
+   
    useEffect(() => {
      const listener = (event) => {
        if (!ref.current || ref.current.contains(event.target)) {
@@ -11,6 +10,7 @@ function useOnClickOutside(ref, handler) {
        }
        handler(event);
      };
+
      document.addEventListener(EVENT_TYPE.MOUSE_DOWN, listener);
      document.addEventListener(EVENT_TYPE.THOUCH_START, listener);
      return () => {
