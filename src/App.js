@@ -15,17 +15,9 @@ function App() {
    } = useTodoController([]);
 
    return (
-      <TodoApp>
+      <TodoApp value={{ todoList, deleteTodo, checkTodo, allCheckTodo, editModeTodo, editTodo }}>
          <TodoApp.Header createTodo={createTodo}/>
-         <TodoApp.Main 
-            todoList={todoList} 
-            activeAllCheckBox={todoList.filter(arg => arg.done === true).length > 0 ? true : false}
-            deleteTodo={deleteTodo}
-            checkTodo={checkTodo}
-            allCheckTodo={allCheckTodo}
-            editModeTodo={editModeTodo}
-            editTodo={editTodo}
-         />
+         <TodoApp.Main/>
          <TodoApp.Footer 
             checkedTodoLength={todoList.filter(arg => arg.done === true).length}
             todoCount={todoList.length} 

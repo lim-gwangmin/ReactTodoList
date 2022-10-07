@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { ROUTE_PATH, LOCATION_STATE } from '../../constants/constants';
 import ClearCompletedBtn from './ClearCompletedBtn';
 
 function Footer({ checkedTodoLength, todoCount, allClear }) {
@@ -12,17 +14,32 @@ function Footer({ checkedTodoLength, todoCount, allClear }) {
          </span>
          <ul className="filters">
             <li>
-               필터 기능 추가 예정 
-            </li>
-            {/* <li>
-               <a href="#/all">All</a>
+               <NavLink 
+                  to={ROUTE_PATH.ALL} 
+                  className={ ({ isActive }) => isActive ? `selected` : undefined}
+                  state={{filterType: LOCATION_STATE.ALL}}
+               >
+                  All
+               </NavLink>
             </li>
             <li>
-               <a href="#/active">Active</a>
+               <NavLink 
+                  to={ROUTE_PATH.ACTIVE} 
+                  className={ ({ isActive }) => isActive ? `selected` : undefined}
+                  state={{filterType: LOCATION_STATE.ACTIVE}}
+               >
+                  Active
+               </NavLink>
             </li>
             <li>
-               <a href="#/completed">Completed</a>
-            </li> */}
+               <NavLink 
+                  to={ROUTE_PATH.COMPLETED} 
+                  state={{filterType: LOCATION_STATE.COMPLETED}}
+                  className={ ({ isActive }) => isActive ? `selected` : undefined}
+               >
+                  Completed
+               </NavLink>
+            </li>
          </ul>
          <ClearCompletedBtn checkedTodoLength={checkedTodoLength} allClear={allClear}/>
       </footer>

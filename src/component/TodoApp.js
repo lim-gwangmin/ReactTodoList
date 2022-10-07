@@ -1,9 +1,10 @@
 import React from 'react'
+import { TodoListProvider } from '../hook/useTodoContext';
 import { Header, Main, Footer } from './index';
 
-function TodoApp({ children }) {
+function TodoApp({ children, value: todoList }) {
   return (
-      <React.Fragment>
+      <TodoListProvider value={todoList}>
          <section className="todoapp">
             {children}
          </section>
@@ -13,7 +14,7 @@ function TodoApp({ children }) {
             <p>Created by <a href="http://todomvc.com">you</a></p>
             <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
          </footer>
-      </React.Fragment>
+      </TodoListProvider>
   );
 };
 
