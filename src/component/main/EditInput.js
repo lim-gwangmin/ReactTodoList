@@ -57,7 +57,7 @@ function EditInput({todoItem, checkTodo, deleteTodo, editModeTodo, editTodo}) {
    React.useEffect(() => {
       if(editInputRef.current !== null) {
          editInputRef.current.focus();
-      }
+      };
    },[todoItem.edit]);
 
    return (

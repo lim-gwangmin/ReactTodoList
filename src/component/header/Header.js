@@ -1,7 +1,7 @@
 import React from 'react';
 import { KEYBOARD_KEY } from '../../constants/constants';
 
-function Header({ createTodo, value }) {
+function Header({ createTodo }) {
    const [ text, setText ] = React.useState('');
    /**
     * 키보드 이벤트 엔터 클릭해야만 리스트 추가
