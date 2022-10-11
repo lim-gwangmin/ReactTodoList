@@ -1,4 +1,4 @@
-import { LOCATION_STATE } from '../constants/constants';
+import { LOCATION_STATE } from 'constants/constants';
 
 function useFilterTodoList(initalTodoList, filterType) {
    let todoList = initalTodoList;

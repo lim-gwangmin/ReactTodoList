@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App'
-import './assests/index.css';
+import 'assests/index.css';
 
 ReactDOM.render(
     <React.StrictMode>

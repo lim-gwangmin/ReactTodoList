@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { EVENT_TYPE } from '../constants/constants';
+import { EVENT_TYPE } from 'constants/constants';
 
 function useOnClickOutside(ref, handler) {
    

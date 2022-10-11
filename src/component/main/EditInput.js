@@ -1,6 +1,6 @@
 import React from 'react';
-import { KEYBOARD_KEY, CLASS_NAME } from '../../constants/constants';
-import useOnClickOutside from '../../hook/useOnClickOutLine';
+import { KEYBOARD_KEY, CLASS_NAME } from 'constants/constants';
+import useOnClickOutside from 'hook/useOnClickOutLine';
 
 
 function EditInput({todoItem, checkTodo, deleteTodo, editModeTodo, editTodo}) {

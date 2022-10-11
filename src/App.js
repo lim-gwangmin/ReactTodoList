@@ -1,6 +1,6 @@
 import React from 'react';
-import TodoApp from './component/TodoApp';
-import useTodoController from './hook/useTodoController';
+import TodoApp from 'component/TodoApp';
+import useTodoController from 'hook/useTodoController';
 
 function App() {
    const {

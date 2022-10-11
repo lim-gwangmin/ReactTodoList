@@ -1,5 +1,5 @@
 import React from 'react';
-import { KEYBOARD_KEY } from '../../constants/constants';
+import { KEYBOARD_KEY } from 'constants/constants';
 
 function Header({ createTodo }) {
    const [ text, setText ] = React.useState('');

@@ -1,7 +1,7 @@
 import TodoItem from './TodoItem';
 import { useLocation } from 'react-router';
-import { useCounterContext } from '../../hook/useTodoContext';
-import useFilterTodoList from '../../function/FilterTodoList';
+import { useCounterContext } from 'hook/useTodoContext';
+import useFilterTodoList from 'function/FilterTodoList';
 
 function Main() {
    const locationState = useLocation().state;

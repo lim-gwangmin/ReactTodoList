@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { ROUTE_PATH, LOCATION_STATE } from '../../constants/constants';
+import { ROUTE_PATH, LOCATION_STATE } from 'constants/constants';
 import ClearCompletedBtn from './ClearCompletedBtn';
 
 function Footer({ checkedTodoLength, todoCount, allClear }) {
