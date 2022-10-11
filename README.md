@@ -25,3 +25,8 @@ MVC TodoList  for React
 ### 내용
 - React context API 이용하여 변수 관리
 - 리스트 저장하는 state와 렌더링하는 로직 사이 url path에 따라 리스트를 필터하는 함수 추가
+
+## 2022.10.11
+ 1. 절대경로 추가
+### 내용
+ - jsconfig.json 파일 추가
