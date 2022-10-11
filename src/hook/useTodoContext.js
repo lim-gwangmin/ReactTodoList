@@ -10,14 +10,14 @@ function TodoListProvider({ children, value }) {
   );
 }
 
-function useCounterContext() {
+function useTodoListContext() {
   const context = React.useContext(TodoListContext);
   
   if (context === undefined) {
-    throw new Error("useCounterContext must be used within a TodoListProvider");
+    throw new Error("useTodoListContext는 TodoListProvider안에서 사용하여야 합니다.");
   }
   
   return context;
 }
 
-export { TodoListProvider, useCounterContext };
+export { TodoListProvider, useTodoListContext };

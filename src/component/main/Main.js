@@ -1,6 +1,6 @@
 import TodoItem from './TodoItem';
 import { useLocation } from 'react-router';
-import { useCounterContext } from 'hook/useTodoContext';
+import { useTodoListContext } from 'hook/useTodoContext';
 import useFilterTodoList from 'function/FilterTodoList';
 
 function Main() {
@@ -13,7 +13,7 @@ function Main() {
       allCheckTodo, 
       editModeTodo, 
       editTodo,
-   } = useCounterContext();
+   } = useTodoListContext();
 
    const { filterTodoList } = useFilterTodoList(todoList, locationFilterType);
    
